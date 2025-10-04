@@ -33,18 +33,80 @@
         </nav>
         <address class="head-adress">
           <ul class="list header-list">
-            <li>
+            <li class="adress-item">
               <a class="link adress-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="adress-item">
               <a class="link adress-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <!-- !BURGER -->
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <!-- !MOBILE MENU -->
+        <div class="mobile-menu">
+          <button type="button" class="modal-close-btn mob-menu-close-btn">
+            <svg class="close-icon mob-menu-close-icon" height="8" width="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-list list">
+            <li><a class="link mob-link" href="./index.html">Studio</a></li>
+            <li><a class="link mob-link" href="">Portfolio</a></li>
+            <li><a class="link mob-link" href="">Contacts</a></li>
+          </ul>
+          <ul class="list mob-mail-list">
+            <li class="mob-item">
+              <a class="link adress-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-item">
+              <a class="link adress-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <ul class="social-menu-list list">
+            <li class="social-item">
+              <a href="#" class="social-team-icon-link">
+                <svg class="social-team-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-team-icon-link">
+                <svg class="social-team-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-team-icon-link">
+                <svg class="social-team-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-team-icon-link">
+                <svg class="social-team-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -129,7 +191,7 @@
                 width="264"
               />
               <div class="team-item-block">
-                <h3 class="scnd-title team-item-title">Mark Guerrero</h3>
+                <h3 class="team-item-title">Mark Guerrero</h3>
                 <p class="team-item-text">Product Designer</p>
                 <ul class="social-team-list list">
                   <li class="social-item">
@@ -170,7 +232,7 @@
                 width="264"
               />
               <div class="team-item-block">
-                <h3 class="scnd-title team-item-title">Tom Ford</h3>
+                <h3 class="team-item-title">Tom Ford</h3>
                 <p class="team-item-text">Frontend Developer</p>
                 <ul class="social-team-list list">
                   <li class="social-item">
@@ -211,7 +273,7 @@
                 width="264"
               />
               <div class="team-item-block">
-                <h3 class="scnd-title team-item-title">Camila Garcia</h3>
+                <h3 class="team-item-title">Camila Garcia</h3>
                 <p class="team-item-text">Marketing</p>
                 <ul class="social-team-list list">
                   <li class="social-item">
@@ -252,7 +314,7 @@
                 width="264"
               />
               <div class="team-item-block">
-                <h3 class="scnd-title team-item-title">Daniel Wilson</h3>
+                <h3 class="team-item-title">Daniel Wilson</h3>
                 <p class="team-item-text">UI Designer</p>
                 <ul class="social-team-list list">
                   <li class="social-item">
@@ -299,9 +361,13 @@
             <li class="portfolio-item">
               <div class="portfolio-img">
                 <img
-                  src="./images/portfolio/banking_app.jpg"
+                  class="p-img"
+                  src="./images/portfolio/img-5.jpg"
+                  srcset="
+                    ./images/portfolio/img-5.jpg    1x,
+                    ./images/portfolio/img@2x-5.jpg 2x
+                  "
                   alt="banking_app"
-                  width="360"
                 />
                 <p class="portfolio-img-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -311,16 +377,19 @@
               </div>
 
               <div class="portfolio-item-container">
-                <h3 class="scnd-title portfolio-item-title">Banking App</h3>
+                <h3 class="portfolio-item-title">Banking App</h3>
                 <p class="par">App</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
                 <img
-                  src="./images/portfolio/cashless_payment.jpg"
+                  src="./images/portfolio/img-4.jpg"
+                  srcset="
+                    ./images/portfolio/img-4.jpg    1x,
+                    ./images/portfolio/img@2x-4.jpg 2x
+                  "
                   alt="cashless_payment"
-                  width="360"
                 />
                 <p class="portfolio-img-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -329,16 +398,18 @@
                 </p>
               </div>
               <div class="portfolio-item-container">
-                <h3 class="scnd-title portfolio-item-title">
-                  Cashless Payment
-                </h3>
+                <h3 class="portfolio-item-title">Cashless Payment</h3>
                 <p class="par">Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
                 <img
-                  src="./images/portfolio/meditation_app.jpg"
+                  src="./images/portfolio/img-3.jpg"
+                  srcset="
+                    ./images/portfolio/img-3.jpg    1x,
+                    ./images/portfolio/img@2x-3.jpg 2x
+                  "
                   alt="meditation_app"
                   width="360"
                 />
@@ -350,14 +421,18 @@
               </div>
 
               <div class="portfolio-item-container">
-                <h3 class="scnd-title portfolio-item-title">Meditation App</h3>
+                <h3 class="portfolio-item-title">Meditation App</h3>
                 <p class="par">App</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
                 <img
-                  src="./images/portfolio/taxi_service.jpg"
+                  src="./images/portfolio/img-2.jpg"
+                  srcset="
+                    ./images/portfolio/img-2.jpg    1x,
+                    ./images/portfolio/img@2x-2.jpg 2x
+                  "
                   alt="taxi_service"
                   width="360"
                 />
@@ -369,14 +444,18 @@
               </div>
 
               <div class="portfolio-item-container">
-                <h3 class="scnd-title portfolio-item-title">Taxi Service</h3>
+                <h3 class="portfolio-item-title">Taxi Service</h3>
                 <p class="par">Marketing</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
                 <img
-                  src="./images/portfolio/screen_illustrations.jpg"
+                  src="./images/portfolio/img-1.jpg"
+                  srcset="
+                    ./images/portfolio/img-1.jpg    1x,
+                    ./images/portfolio/img@2x-1.jpg 2x
+                  "
                   alt="screen_illustrations"
                   width="360"
                 />
@@ -388,18 +467,19 @@
               </div>
 
               <div class="portfolio-item-container">
-                <h3 class="scnd-title portfolio-item-title">
-                  Screen Illustrations
-                </h3>
+                <h3 class="portfolio-item-title">Screen Illustrations</h3>
                 <p class="par">Design</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img">
                 <img
-                  src="./images/portfolio/online_courses.jpg"
+                  src="./images/portfolio/img.jpg"
+                  srcset="
+                    ./images/portfolio/img.jpg    1x,
+                    ./images/portfolio/img@2x.jpg 2x
+                  "
                   alt="online_courses"
-                  width="360"
                 />
                 <p class="portfolio-img-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -409,7 +489,7 @@
               </div>
 
               <div class="portfolio-item-container">
-                <h3 class="scnd-title portfolio-item-title">Online Courses</h3>
+                <h3 class="portfolio-item-title">Online Courses</h3>
                 <p class="par">Marketing</p>
               </div>
             </li>
@@ -566,8 +646,10 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="policy-link">Privacy Policy</a>
+              <span class="policy-wewewe">
+                I accept the terms and conditions of the
+                <a href="" class="policy-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="hero-btn" type="submit">Send</button>
@@ -575,5 +657,6 @@
       </div>
     </div>
     <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/menu.js"></script>
   </body>
 </html>
