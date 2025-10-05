@@ -1,3 +1,7 @@
+/* * {
+  border: 1px solid red;
+} */
+
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -167,9 +171,6 @@ address {
 
 /* ====================  HEADER SECTION ==================== */
 .header {
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -177,6 +178,9 @@ address {
   align-items: center;
   justify-content: space-between;
   padding: 16px;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 @media only screen and (min-width: 768px) {
@@ -282,19 +286,23 @@ address {
   }
 }
 
-@media only screen and (min-width: 1158px) {
-  .head-adress {
-    display: flex;
-  }
-}
-
 .adress-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
   color: var(--slate);
+}
+
+@media only screen and (min-width: 768px) {
+  .adress-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -398,14 +406,6 @@ address {
   flex-direction: column;
   gap: 24px;
   margin-bottom: 40px;
-}
-
-.mob-item {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--slate);
 }
 
 .social-menu-list {
@@ -671,7 +671,6 @@ address {
   width: calc((100% - 72px) / 4);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: var(--white);
   background: var(--white);
   width: 264px;
 }
