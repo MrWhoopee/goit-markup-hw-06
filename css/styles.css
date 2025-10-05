@@ -418,7 +418,6 @@ address {
   background-image: linear-gradient(180deg, var(--grey), var(--grey)),
     url(../images/hero/bg-mobile.jpg);
   background-color: var(--navy-blue);
-  /* height: 600px; */
   max-width: 320px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -782,15 +781,22 @@ address {
 @media only screen and (min-width: 768px) {
   .portfolio-img {
     width: 356px;
+    /* якщо прибрати, на планшетах заламається */
   }
 }
 
-.portfolio-img img {
+@media only screen and (min-width: 1158px) {
+  .portfolio-img {
+    width: 100%;
+  }
+}
+
+/* .portfolio-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
+} */
 
 .portfolio-img-description {
   position: absolute;
